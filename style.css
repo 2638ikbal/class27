@@ -1,0 +1,283 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif
+}
+
+/* Header Section */
+.header-section {
+    background: #22c3a3;
+}
+.header-left{
+    width: 30%;
+    float: left;
+    
+}
+.header-left a {
+    text-decoration: none;
+    line-height: 44px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header-right{
+    width: 70%;
+    float: right;
+
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right li{
+    margin-left: -4px;
+    display: inline-block;
+}
+.header-right ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+    padding: 12px 15px;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    text-transform: uppercase;
+    position: relative;
+}
+.header-right ul li a::before {
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition: 0.6s;
+}
+.header-right ul li a:hover::before{
+    width: 100%;
+}
+.header-right ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.header-right ul li a:hover{
+    background-color: #1a9980;
+    color: white;
+}
+/* Header  Section End */
+
+
+/*.....Banner Section......*/
+.banner-section {
+    background-image: url("./header-bg01.jpg");
+    background-size: cover;
+    padding: 200px 0;
+    background-position: center center;
+}
+.banner-content {
+    text-align: center;
+}
+.banner-section h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: white;
+    font-family: none;
+    margin-bottom: 20px;
+}
+.banner-section p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+.banner-section  a button {
+    background: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 4px;
+    font-size: 25px;
+    transition: .4s;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+.banner-section a button:hover{
+    background-color: white;
+    color:#03886d ;
+}
+/* Banner Section End */
+
+
+/*.....Service Section.....*/
+.service-section {
+    padding: 80px 0px;
+    text-align: center;
+    font-family: none;
+}
+.service-head {
+    padding-bottom: 120px;
+}
+.service-head h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.service-head p {
+    color: #bbbaba;
+    font-size: 20px;
+}
+.service-catagory {
+    text-align: center;
+}
+.service-item {
+    float: left;
+    width: 20%;
+    margin-bottom: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.service-item h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.service-item p {
+    color: #bbbaba;
+}
+.service-item span i{
+    font-size: 40px;
+    color: #0dbf9b;
+    margin-bottom: 30px;
+}
+/* Service Section End */
+
+
+.line{
+    background: #87d4be;
+    height: 3px;
+    margin: 20px 0 10px 0;
+}
+
+/*.....About Section.....*/
+.about-section {
+    text-align: center;
+    padding: 70px 0;
+}
+.about-head {
+    padding-bottom: 70px;
+}
+.about-head h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about-head p {
+    color: #bbbaba;
+    font-size: 20px;
+}
+.about-image-left{
+    float: left;
+    width: 40%;
+}
+.about-content-right {
+    float: right;
+    width: 55%;
+    text-align: left;
+    margin-left: 5px;
+    padding: 0 10px;
+}
+.about-image-left img {
+    max-width: 100%;
+}
+.content-full {
+    margin-bottom: 6px;
+}
+.content-full h2 {
+    margin-bottom: 8px;
+}
+.content-full p {
+    color: #bbbaba;
+    font-size: 15px;
+}
+/* About Section End */
+
+
+
+/*.....Contact Section.....*/
+.contact-section {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 60px 0;
+}
+.contact-head {
+    margin-bottom: 50px;
+}
+.contact-head h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact-head p {
+    color: #bbbaba;
+    font-size: 20px;
+}
+.contact-bottom{
+    text-align: center;
+}
+.contact-box {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+    margin-left: 21px;
+}
+.contact-box i{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #1bc29f;
+}
+.contact-box p{
+    color: #afafaf;
+
+}
+/* Contact Section End */
+
+/*....foooter Section.....*/
+.footer-top {
+    background: #0dbf9b;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-bottom {
+    background: black;
+    text-align: center;
+}
+.footer-top i{
+    margin: 0px 15px;
+    font-size: 25px;
+}
+.footer-top a{
+    text-decoration: none;
+    color:  white;
+    transition: .4s;
+}
+.footer-top a:hover{
+    color: black;
+}
+.footer-bottom{
+    background: #222222;
+    color: dimgrey;
+}
+
+.footer-content p{
+    padding: 15px 0px ;
+}
